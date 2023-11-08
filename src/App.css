@@ -1,0 +1,260 @@
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #9618d1;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+/* Навигационное меню */
+nav {
+  background-color: #181010;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+nav a {
+  color: rgb(57, 206, 230);
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Стили для списка статей */
+.Article {
+  border: 2px solid #0a0909;
+  padding: 30px;
+  margin-bottom: 10px;
+  background-color: #94edf1;
+  height: auto;
+  border-radius: 20px;
+}
+
+.ArticleContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Стили для изображения */
+.ArticleImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-left: 15px;
+  background-color: #e6cbad; /* Голубой цвет фона */
+  
+}
+
+
+.ArticleText {
+  flex: 1;
+}
+
+.Article h2 {
+  max-width: 250px;
+  font-size: 24px;
+  margin: 10px 0;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.Article p {
+  max-width: 250px;
+  margin: 10px 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+
+.Article img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  width: 99%;
+  padding: 10px;
+  border: 2px solid #d49292;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 11px;
+  border-radius: 15px;
+}
+
+button {
+  background-color: #ca4040;
+  color: rgb(26, 22, 22);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #db8282;
+}
+
+/* Стили для комментариев */
+.CommentList {
+  margin-top: 20px;
+}
+
+.CommentList h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.CommentList p {
+  margin-bottom: 10px;
+}
+
+/* Стили для выбора категории */
+select {
+  width: 100%;
+}
+
+/* Стили для ссылок */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для заголовка */
+h1 {
+  font-size: 32px;
+}
+
+/* Стили для заголовка статьи на главной странице */
+.ArticleList h2 {
+  font-size: 28px;
+}
+
+/* Стили для заголовка детальной страницы статьи */
+.ArticleDetail h1 {
+  font-size: 36px;
+}
+/* Стили для кнопки "далее" */
+.LinkReadMore {
+  display: inline-block;
+  background-color: #db6334; /* Синий цвет */
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin-right: 10px; /* Расстояние между кнопками */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.LinkReadMore:hover {
+  background-color: #2980b9; /* Синий цвет в hover-состоянии */
+}
+
+/* Стили для кнопки "Редактировать" */
+.LinkEdit {
+  display: inline-block;
+  background-color: #4ae73c; /* Красный цвет */
+  color: rgb(8, 8, 8);
+  padding: 10px 20px;
+  margin-right: 10px; /* Небольшое расстояние между кнопками */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.LinkEdit:hover {
+  background-color: #bec02b; /* Красный цвет в hover-состоянии */
+}
+
+/* Стили для кнопки "Удалить" */
+.ButtonDelete {
+  display: inline-block;
+  background-color: #e74c3c; /* Красный цвет */
+  color: rgb(7, 6, 6);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.ButtonDelete:hover {
+  background-color: #c0392b; /* Красный цвет в hover-состоянии */
+}
+.ExpandedImageOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.ExpandedImage {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: flex-start; /* Выравнивание по левому краю */
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.LinkReadMore,
+.LinkEdit {
+  margin: 0 5px;
+  min-width: 120px; /* Устанавливает минимальную ширину для кнопок "Читать далее" и "Редактировать" */
+  white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.ButtonDelete {
+  margin: 0 5px;
+  min-width: 160px; /* Устанавливает большую минимальную ширину для кнопки "Удалить", делая её длиннее */
+  white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.ButtonContainer1,
+.ButtonContainer2 {
+  display: flex;
+  justify-content: flex-start; /* Выравнивание по левому краю */
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
